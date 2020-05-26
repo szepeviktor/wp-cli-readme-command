@@ -1,0 +1,25 @@
+{
+    "name": "szepeviktor/wp-cli-readme-command",
+    "type": "wp-cli-package",
+    "description": "Validate readme.txt of themes and plugins.",
+    "keywords": [
+        "wp-cli",
+        "readme",
+        "readmetxt",
+        "validate"
+    ],
+    "homepage": "https://github.com/szepeviktor/wp-cli-readme-validator-command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viktor Szépe",
+            "email": "viktor@szepe.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "files": [ "wp-cli-readme-command.php" ]
+    }
+}
