@@ -2,6 +2,21 @@
 
 Validate readme.txt of themes and plugins.
 
+### Installation
+
+Require it from your `wp-cli.yml`
+
+```yaml
+require:
+  - vendor/szepeviktor/wp-cli-readme-command/wp-cli-readme-command.php
+```
+
+### Usage
+
+```bash
+wp readme validate wp-content/plugins/coblocks/readme.txt
+```
+
 ### Update classes from WordPress Meta
 
 ```bash
