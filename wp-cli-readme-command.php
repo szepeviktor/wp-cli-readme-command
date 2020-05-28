@@ -37,15 +37,15 @@ class WP_CLI_Readme_Validator extends WP_CLI_Command {
         // Show messages
         $valid = true;
         foreach ( $result['errors'] as $message ) {
-            WP_CLI::log( $message );
+            WP_CLI::error( $message );
+            $valid = false;
         }
         foreach ( $result['warnings'] as $message ) {
             WP_CLI::warning( $message );
             $valid = false;
         }
         foreach ( $result['notes'] as $message ) {
-            WP_CLI::error( $message );
-            $valid = false;
+            WP_CLI::log( $message );
         }
         if ( $valid ) {
             WP_CLI::success( 'readme.txt is valid: ' . $path );
